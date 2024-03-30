@@ -1,7 +1,7 @@
 resource "aws_instance" "jenkins_ec2" {
-  ami                         = "ami-0c1c30571d2dae5c9"
+  ami                         = var.ami
   instance_type               = var.instance_type
-  associate_public_ip_address = true
+  associate_public_ip_address = var.associate_public_ip_address
   vpc_security_group_ids      = [aws_security_group.jenkins_security_group.id]
   user_data                   = file("./jenkins_install.sh")
 
