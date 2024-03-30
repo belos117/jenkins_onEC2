@@ -25,6 +25,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_ami"></a> [ami](#input\_ami) | AMI for Operating System | `string` | `"ami-0c1c30571d2dae5c9"` | no |
+| <a name="input_associate_public_ip_address"></a> [associate\_public\_ip\_address](#input\_associate\_public\_ip\_address) | Associate public IP address | `bool` | `true` | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | instance type to deploy instance | `string` | `"t3.micro"` | no |
 | <a name="input_region"></a> [region](#input\_region) | Region to deploy instance | `string` | `"eu-west-1"` | no |
 
